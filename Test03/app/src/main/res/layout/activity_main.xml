@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.test03.MainActivity">
+
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="일반 다이얼로그 띄우기"
+        android:id="@+id/btn_dialog"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="날짜다이얼로그 띄우기"
+        android:id="@+id/btn_date_dialog"
+        app:layout_constraintBottom_toTopOf="@+id/btn_dialog"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시간다이얼로그 띄우기"
+        android:id="@+id/btn_time_dialog"
+        app:layout_constraintBottom_toTopOf="@+id/btn_date_dialog"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="커스텀 다이얼로그 띄우기"
+        android:id="@+id/btn_custom_dialog"
+        app:layout_constraintBottom_toTopOf="@+id/btn_time_dialog"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
